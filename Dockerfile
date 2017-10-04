@@ -9,8 +9,8 @@ RUN \
   wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu && \
   chmod +x ./install-tl-ubuntu && \
   ./install-tl-ubuntu --more-te && \
-  source /etc/environment && \
   rm -rf /var/lib/apt/lists/*
 
+ENV PATH="/opt/texbin:${PATH}"
 WORKDIR /data
 VOLUME ["/data"]
