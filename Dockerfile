@@ -1,5 +1,5 @@
 ARG DEBIAN_FRONTEND=noninteractive
-FROM ubuntu:trusty
+FROM ubuntu:bionic
 
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
